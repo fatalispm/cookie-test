@@ -16,32 +16,17 @@
     "default_popup": "src/popup.html"
   },
 
-  "page_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "Action title",
-    "default_popup": "src/popup.html"
-  },
-
   "permissions": [
-    "http://*.google.com/",
-    "bookmarks",
-    "chrome://favicon/",
-    "clipboardRead",
-    "clipboardWrite",
-    "contextMenus",
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*",
     "cookies",
-    "fileBrowserHandler",
-    "geolocation",
-    "history",
-    "idle",
-    "management",
-    "notifications",
-    "tabs",
-    "tts",
-    "ttsEngine",
-    "unlimitedStorage"
+    "bookmarks"
   ],
-
+  "background" : {
+    "scripts": [
+        "background.js"
+    ]
+  },
   "options_page": "options.html",
 
   "background_page": "background.html",
